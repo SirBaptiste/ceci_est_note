@@ -170,6 +170,7 @@ input#mail, input#photo, textarea#message{
 	#form input{
 		width : 98%;
 	}
+	textarea{width:98%};
 }
 
 /* Téléphones intelligents */
@@ -212,4 +213,5 @@ input#mail, input#photo, textarea#message{
 		width : 100%;
 	}
 	#form input{width : 98%;}
+	textarea{width:98%};
 }
