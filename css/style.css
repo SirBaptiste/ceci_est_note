@@ -1,0 +1,153 @@
+html{
+	font-size : 62.5%;
+	background-image : url("../img/bg.jpg");
+	background-size : contain;
+	max-width : 99vw;
+	padding : 0px;
+}
+*{
+	font-family : 'Arial';
+}
+h1{
+	font-size : 2.2rem;
+}
+h2{
+	font-size : 1.6rem;
+}
+label, p{
+	font-size : 1.2rem;
+}
+.aDroite{
+	float : right;
+}
+.center{
+	text-align : center;
+}
+textarea{
+	resize : none;
+	height : 5rem;
+}
+
+#header, #lien_header, #formulaire{
+	display : inline;
+	padding : 0px;
+}
+#header{
+	height : 175px;
+}
+#search_bar{
+	border : 1px solid grey;
+	float : right;
+	padding : 0px;
+	margin-left : 15px;
+}
+#submit_search{
+	background-image : url("../img/search.png");
+	background-size : contain;
+	background-repeat : no-repeat;
+}
+#search_tags{
+	border : 0;
+}
+#logo{
+	float : left;
+}
+div#div_gross_image{
+	width : 100%;
+}
+#grosse_image{
+	margin : 150px auto auto auto;
+	border-top : 1px solid black;
+	padding-top : 5px;
+	max-width : 750px;
+}
+ul#list_img{
+	width : 100%;
+	padding : 0px;
+}
+#list_img img{
+	width : 100%;
+}
+#list_img li{
+	display : inline-block;
+	width : 23%;
+	vertical-align : top;
+	text-align : center;
+}
+.caption p{
+	font-size : 1.6rem;
+	font-weight : bold;
+}
+.desc p{
+	font-size : 1.2rem;
+}
+ul#mapsAndForm{
+	width : 100%;
+	padding : 0px;
+}
+#maps{
+	border-right : 2px solid black;
+	padding-right : 3px;
+}
+#form{
+	padding-left : 3px;
+}
+#mapsAndForm input{
+	margin-bottom : 5px;
+}
+#mapsAndForm li{
+	display : inline-block;
+	width : 48%;
+	height : 48%;
+}
+.unDeux input{
+	width : 48%;
+}
+input#mail, input#photo, textarea#message{
+	width : 97.5%;
+}
+#footer{
+	display : inline;
+	bottom:0;
+	width:100%;
+	height: 1.1rem;
+	right : 0;
+}
+
+/* Tablettes */
+@media screen and (min-width: 768px) and (max-width: 979px){
+	#logo{
+		float:  none;
+		display : block;
+		margin : auto;
+	}
+	.aDroite{
+		float : none;
+		display : inline-block;
+		margin : auto;
+	}
+	#list_img li{
+		width : 45vw;
+	}
+	#mapsAndForm li{
+		width : 98vw;
+	}
+}
+
+/* Téléphones intelligents */
+@media screen and (max-width: 767px){
+	#logo{
+		float:  none;
+		display : block;
+		margin : auto;
+	}
+	.aDroite{
+		display : none;
+	}
+	#list_img li{
+		width : 98%;
+	}
+	#mapsAndForm li{
+		width : 98%;
+	}
+}
