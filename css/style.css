@@ -8,6 +8,9 @@ html{
 *{
 	font-family : 'Arial';
 }
+body{
+	margin : auto;
+}
 h1{
 	font-size : 2.2rem;
 }
@@ -54,25 +57,41 @@ textarea{
 }
 div#div_gross_image{
 	width : 100%;
+	display : block;
+	text-align : center;
+	padding : 0px;
 }
 #grosse_image{
-	margin : 150px auto auto auto;
+	margin-top : 150px;
 	border-top : 1px solid black;
 	padding-top : 5px;
 	max-width : 750px;
 }
-ul#list_img{
+#list_img{
+	display : block;
 	width : 100%;
+	height : 20%;
+	background-color : #e6e6e6;
+}
+#list_img ul{
+	display : block;
+	margin : auto;
+	text-align : center;
 	padding : 0px;
 }
 #list_img img{
 	width : 100%;
 }
 #list_img li{
+	margin : 5%;
 	display : inline-block;
-	width : 23%;
+	width : 10%;
 	vertical-align : top;
 	text-align : center;
+	height : 100%;
+	border : 1px solid #2e2e1f;
+	box-shadow : 5px 5px grey;
+	background-color : white;
 }
 .caption p{
 	font-size : 1.6rem;
@@ -97,14 +116,14 @@ ul#mapsAndForm{
 }
 #mapsAndForm li{
 	display : inline-block;
-	width : 48%;
-	height : 48%;
+	width : 49%;
+	height : 100%;
 }
 .unDeux input{
-	width : 48%;
+	width : 48.8%;
 }
 input#mail, input#photo, textarea#message{
-	width : 97.5%;
+	width : 100%;
 }
 #footer{
 	display : inline;
@@ -114,8 +133,17 @@ input#mail, input#photo, textarea#message{
 	right : 0;
 }
 
+@media screen and (min-width: 979px){
+	body{
+		max-width : 1200px;
+	}
+}
 /* Tablettes */
 @media screen and (min-width: 768px) and (max-width: 979px){
+	#header{
+		display:block;
+		text-align : center;
+	}
 	#logo{
 		float:  none;
 		display : block;
@@ -126,16 +154,27 @@ input#mail, input#photo, textarea#message{
 		display : inline-block;
 		margin : auto;
 	}
+	#grosse_image{
+		margin-top : 0;
+		border : 0;
+	}
 	#list_img li{
 		width : 45vw;
 	}
 	#mapsAndForm li{
-		width : 98vw;
+		width : 48vw;
+	}
+	#form input{
+		width : 98%;
 	}
 }
 
 /* Téléphones intelligents */
 @media screen and (max-width: 767px){
+	#header{
+		display:block;
+		text-align : center;
+	}
 	#logo{
 		float:  none;
 		display : block;
@@ -144,10 +183,14 @@ input#mail, input#photo, textarea#message{
 	.aDroite{
 		display : none;
 	}
+	#grosse_image{
+		margin-top : 0;
+		border : 0;
+	}
 	#list_img li{
-		width : 98%;
+		width : 98vw;
 	}
 	#mapsAndForm li{
-		width : 98%;
+		width : 98vw;
 	}
 }
