@@ -216,10 +216,17 @@ input#mail, input#photo, textarea#message{
 	
 	#menuTel ul{
 		background-color : black;
+		margin : 0;
+	}
+	#menuTel li{
+		border-bottom : 1px solid white;
+		padding : 0;
 	}
 	#menuTel li a{
 		color : white;
 		text-decoration : none;
 		font-weight : bold;
+		font-size : 2rem;
+		line-height : 3rem;
 	}
 }
