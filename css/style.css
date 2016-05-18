@@ -31,6 +31,9 @@ textarea{
 	height : 5rem;
 }
 
+#pitiMenu, #logTel{
+	display : none;
+}
 #header, #lien_header, #formulaire{
 	display : inline;
 	padding : 0px;
@@ -177,6 +180,17 @@ input#mail, input#photo, textarea#message{
 	#header{
 		display:block;
 		text-align : center;
+		height : 110px;
+	}
+	#pitiMenu{
+		display : block;
+		float : left;
+		margin-top : -65px;
+	}
+	#logTel{
+		display : block;
+		float : right;
+		margin-top : -105px;
 	}
 	#logo{
 		float:  none;
