@@ -171,6 +171,9 @@ input#mail, input#photo, textarea#message{
 
 /* Téléphones intelligents */
 @media screen and (max-width: 767px){
+	#header, #corps{
+		width : 100vw;
+	}
 	#header{
 		display:block;
 		text-align : center;
@@ -186,11 +189,13 @@ input#mail, input#photo, textarea#message{
 	#grosse_image{
 		margin-top : 0;
 		border : 0;
+		width : 100%;
 	}
 	#list_img li{
-		width : 98vw;
+		width : 50%;
 	}
 	#mapsAndForm li{
-		width : 98vw;
+		width : 100%;
 	}
+	#form input{width : 98%;}
 }
